@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>MIATT.HW06.hawkid</category>
+  <title>Image Coordinate Transforms (MIATT HW06)</title>
+  <description>Practice the four ITK coordinate transform methods on a 3D medical image:
+TransformIndexToPhysicalPoint, TransformPhysicalPointToIndex,
+TransformPhysicalPointToContinuousIndex, and TransformContinuousIndexToPhysicalPoint.</description>
+  <documentation-url></documentation-url>
+  <license></license>
+  <contributor>Hans J. Johnson (hans-johnson -at- uiowa.edu)</contributor>
+  <version>0.0.2026</version>
+
+  <parameters advanced="false">
+    <label>Input Image</label>
+    <image>
+      <name>inputVolume</name>
+      <longflag>inputVolume</longflag>
+      <label>Input Volume</label>
+      <description>The input 3D image to query (e.g. /nfsscratch/opt/ece5490/data/Eyes.nrrd).</description>
+      <channel>input</channel>
+      <default>/nfsscratch/opt/ece5490/data/Eyes.nrrd</default>
+    </image>
+  </parameters>
+
+  <parameters advanced="false">
+    <label>Physical Point</label>
+    <description>A point in physical (world) space in mm to transform into index space.</description>
+    // TODO: Your code here
+      <name>physX</name>
+      <longflag>physX</longflag>
+      <label>Physical X (mm)</label>
+      <description>X component of the input physical point (mm).</description>
+      <default>0.0</default>
+    <XXXXXXTODO YOUR CODE HERE>
+    // TODO: Your code here
+  </parameters>
+
+  <parameters advanced="false">
+    <label>Integer Index</label>
+    <description>A voxel address in integer index space to transform into physical space.</description>
+    // TODO: Your code here
+      <name>indexI</name>
+      <longflag>indexI</longflag>
+      <label>Index I</label>
+      <description>I component of the integer voxel index.</description>
+      <default>0</default>
+    // TODO: Your code here
+  </parameters>
+</executable>
